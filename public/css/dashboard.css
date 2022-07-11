@@ -1,0 +1,157 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  background-color: #191919;
+  color: #fff;
+}
+
+header {
+  position: relative;
+  min-height: 80px;
+  display: block;
+}
+
+.header-content {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translate(-50%);
+}
+
+.img-header {
+  vertical-align: middle;
+  max-height: 50px;
+}
+
+.text-header {
+  vertical-align: middle;
+  font-size: 28px;
+}
+
+.navbar-toggler {
+  padding: 0.2rem 0.5rem;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.content {
+  background: #212529;
+  margin-top: 20px;
+  border-radius: 3px;
+  padding: 20px;
+}
+
+.sweet-alert {
+  background-color: #212529;
+}
+
+.sweet-alert .sa-icon.sa-success::before,
+.sweet-alert .sa-icon.sa-success::after,
+.sweet-alert .sa-icon.sa-success .sa-fix {
+  background: #212529;
+}
+
+.table > :not(caption) > * > * {
+  padding: 0.1rem 0.1rem;
+}
+
+.table {
+  --bs-table-bg: transparent;
+  --bs-table-accent-bg: transparent;
+  --bs-table-striped-color: #404950;
+  --bs-table-striped-bg: rgba(255, 255, 255, 0.105);
+  --bs-table-active-color: #212529;
+  --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+  --bs-table-hover-color: #212529;
+  --bs-table-hover-bg: rgba(0, 0, 0, 0.075);
+  border-color: #191a1a;
+}
+
+.table.dataTable td.dataTables_empty,
+table.dataTable.table-striped > tbody > tr.odd,
+table.dataTable.table-striped > tbody > tr.even,
+table.table-striped > tbody > tr {
+  vertical-align: middle;
+  color: #fff;
+}
+
+.dataTables_filter,
+.dataTables_length {
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+.dataTables_processing {
+  color: #212121;
+}
+
+.page-link {
+  padding: 3px 8px;
+  font-size: 14px;
+}
+
+.btn-xs {
+  font-size: 12px;
+  padding: 3px 8px;
+}
+
+.right-label {
+  text-align: right;
+}
+
+.modal-content {
+  background: #363b40 !important;
+}
+
+.modal-footer,
+.modal-header {
+  border-color: #31363b !important;
+}
+
+.card-body table.table-striped > thead > tr,
+.card-body table.table-striped > tbody > tr {
+  vertical-align: middle;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    min-height: 60px;
+  }
+
+  .header-content {
+    position: absolute;
+    left: 40%;
+    top: 15px;
+    transform: translate(-40%);
+  }
+
+  .img-header {
+    max-height: 30px;
+  }
+
+  .text-header {
+    font-size: 18px;
+  }
+
+  .right-label {
+    text-align: left;
+  }
+
+  .btn-xs {
+    width: 100%;
+  }
+
+  .nav-link i {
+    width: 40px;
+    text-align: center;
+  }
+}
